@@ -192,6 +192,9 @@ router.post("/verify", protect, async (req, res) => {
         <p>Hello ${payment.user.name},</p>
         <p>Your QR ticket is attached.</p>
         <p><b>Do not share. One-time entry only.</b></p>
+        <p><b>payment_id</b> = ${razorpay_payment_id}</p>
+        <p><i>please show this QR at the entry to Confirm your identity</i></p>
+        <center> <p><b> THANK YOU</b></p>
       `,
       attachments: [
         {
